@@ -9,8 +9,8 @@ Vagrant.configure("2") do |config|
   config.ssh.shell = "sh"
 
   config.vm.hostname = "vagrantbox"
-  config.vm.box = "vmware_esxi55"
-  config.vm.box_url = "./vmware_esxi55.box"
+  config.vm.box = "vmware_esxi65"
+  config.vm.box_url = "./vmware_esxi65.box"
   config.vm.synced_folder ".", "/vagrant", nfs: true
 
   [:vmware_fusion, :vmware_workstation].each do |name|
